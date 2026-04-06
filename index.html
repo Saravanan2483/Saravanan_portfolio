@@ -3,164 +3,559 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Saravanan</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <title>Saravanan S | Industrial Automation Software Engineer</title>
+  <meta name="description" content="Portfolio of Saravanan S - Industrial Automation Software Engineer specializing in AMR Fleet Management, AI Vision Systems, and PLC Integration.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <!-- Cursor glow effect -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">S<span class="accent">.</span>S</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link"id="home" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link"id="About" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link"id="service" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-          <li class="nav-item"><a class="nav-link"id="Contact"href="#">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#flagship" class="nav-link">Flagship</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="hero d-flex align-items-center">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-start">
-          <h1>Hello, I'm</h1>
-          <h2 class="fw-bold">SARAVANAN S</h2>
-          <h3>And I'm a <span class="highlight">Junior Developer!</span></h3>
-          <p>I'm a passionate developer specializing in Node.js, Python,Php, MongoDB, and web automation, currently working as a Junior Developer at Robonetics Automation Solution LLP.</p>
-          <div class="social-icons my-4">
-            <a href="https://www.linkedin.com/in/saravanan-s-a80132275" class="social-icon"><i class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/saravanan2483" class="social-icon"><i class="bi bi-github"></i></a>
-          </div>
-          <a href="https://roboneticssolutions.com/uploads/SARAVANAN.pdf"Download class="btn btn-primary btn-shadow">Download Resume</a>
+  <section id="hero" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="hero-badge fade-up">
+          <span class="badge-dot"></span>
+          Open to new opportunities
         </div>
-        <div class="col-md-6 text-center">
-          <div class="image-container">
-            <div class="image-circle">
-              <img src="saravnan.jpg" alt="Profile Picture" class="profile-img">
+        <h1 class="hero-name fade-up delay-1">
+          SARAVANAN <span class="accent">S</span>
+        </h1>
+        <h2 class="hero-title fade-up delay-2">Industrial Automation Software Engineer</h2>
+        <div class="hero-tags fade-up delay-3">
+          <span class="tag">AMR Fleet Management</span>
+          <span class="tag-divider"></span>
+          <span class="tag">AI Vision Systems</span>
+          <span class="tag-divider"></span>
+          <span class="tag">PLC Integration</span>
+        </div>
+        <p class="hero-description fade-up delay-4">
+          Building production-grade systems that bridge AI vision, industrial protocols, and enterprise middleware in live factory environments.
+        </p>
+        <div class="hero-meta fade-up delay-4">
+          <span class="meta-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Chennai, Tamil Nadu, India
+          </span>
+          <span class="meta-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            Robonetics Automation Solutions LLP
+          </span>
+          <span class="meta-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 6 3 6 3s3 0 6-3v-5"/></svg>
+            B.E. CSE &middot; CGPA 8.5
+          </span>
+        </div>
+        <div class="hero-actions fade-up delay-5">
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="#flagship" class="btn btn-outline">View Flagship Project</a>
+        </div>
+        <div class="hero-social fade-up delay-5">
+          <a href="https://www.linkedin.com/in/saravanan-s-a80132275" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/saravanan2483" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrapper fade-up delay-2">
+          <div class="hero-image-ring"></div>
+          <div class="hero-image-ring hero-image-ring-2"></div>
+          <img src="saravnan.jpg" alt="Saravanan S - Industrial Automation Software Engineer" class="hero-image">
+        </div>
+        <div class="floating-card card-1 fade-up delay-3">
+          <span class="floating-card-icon">&#9881;</span>
+          <span>10+ AMRs</span>
+        </div>
+        <div class="floating-card card-2 fade-up delay-4">
+          <span class="floating-card-icon">&#9889;</span>
+          <span>&lt;500ms Loop</span>
+        </div>
+        <div class="floating-card card-3 fade-up delay-5">
+          <span class="floating-card-icon">&#128065;</span>
+          <span>AI Vision</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator fade-up delay-5">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label fade-up">About</span>
+        <h2 class="section-title fade-up delay-1">Professional <span class="accent">Summary</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text fade-up delay-2">
+          <p class="about-lead">
+            Industrial Automation Software Engineer with <strong>1 year 10 months</strong> of production experience deploying AI vision systems, autonomous fleet management, and PLC integrations in live factory environments.
+          </p>
+          <p>
+            Uniquely bridges computer vision (YOLOv8, DepthAI OAK-D), industrial protocols (Delta Modbus TCP, Siemens S7, RS-485), and enterprise middleware (SAP WMS, WebSocket, Node.js). Currently leading <strong>AIRA-Orbis</strong> — a production FMS orchestrating a 10+ AMR fleet with real-time collision prevention, geometry-aware stack resolution, and SAP WMS synchronization.
+          </p>
+        </div>
+        <div class="about-stats fade-up delay-3">
+          <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">AMRs Managed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">&lt;500ms</div>
+            <div class="stat-label">Telemetry Loop</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">~40%</div>
+            <div class="stat-label">Commissioning Time Reduced</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">&lt;100ms</div>
+            <div class="stat-label">Safety Response</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-info-bar fade-up delay-3">
+        <div class="info-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 6 3 6 3s3 0 6-3v-5"/></svg>
+          <span>B.E., Computer Science &amp; Engineering &middot; CGPA 8.5/10</span>
+        </div>
+        <div class="info-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span>Tamil (Native) &middot; English (Professional)</span>
+        </div>
+        <div class="info-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Graduated 2024 &middot; Vetri Vinayaha College of Engineering &amp; Technology</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flagship Project Section -->
+  <section id="flagship" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label fade-up">Flagship Project</span>
+        <h2 class="section-title fade-up delay-1">AIRA-ORBIS <span class="accent">FMS</span></h2>
+        <p class="section-subtitle fade-up delay-2">Autonomous Fleet Management System &middot; Robonetics Automation Solutions LLP &middot; 2024&ndash;Present</p>
+      </div>
+      <div class="flagship-tech fade-up delay-2">
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">Express.js</span>
+        <span class="tech-tag">MySQL</span>
+        <span class="tech-tag">WebSocket</span>
+        <span class="tech-tag">Modbus TCP/RTU</span>
+        <span class="tech-tag">SAP WMS</span>
+        <span class="tech-tag">Industrial IoT</span>
+        <span class="tech-tag">TCP</span>
+      </div>
+      <p class="flagship-desc fade-up delay-2">Production-deployed middleware bridging SAP WMS business intent with a 10+ AMR fleet in a live warehouse. Manages real-time mission orchestration, collision prevention, and inventory synchronization.</p>
+
+      <div class="flagship-grid">
+        <!-- Core Architecture -->
+        <div class="flagship-card fade-up delay-2">
+          <div class="flagship-card-header">
+            <div class="flagship-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             </div>
+            <h3>Core Architecture</h3>
+          </div>
+          <ul class="flagship-list">
+            <li>Engineered asynchronous, state-driven middleware mapping SAP WMS 'business intent' to low-level AMR actions &mdash; FMS acts as a high-fidelity shadow mirror ensuring <strong>100% inventory sync</strong> between physical and virtual records.</li>
+            <li>Designed Transaction Orchestrator with journaled sub-tasks: missions auto-resume from exact failure point after network drops or server restarts &mdash; <strong>zero mission loss</strong>.</li>
+            <li>Implemented database-backed Rack Locking preventing race conditions across 10+ concurrent robots; guarantees single-robot exclusive access to each physical pick point.</li>
+          </ul>
+        </div>
+
+        <!-- Algorithmic Innovation -->
+        <div class="flagship-card fade-up delay-3">
+          <div class="flagship-card-header">
+            <div class="flagship-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <h3>Algorithmic Innovation</h3>
+          </div>
+          <ul class="flagship-list">
+            <li><strong>Geometry-Aware Stack Resolution Algorithm:</strong> recursively detects blocker pallets, executes top-down buffer sequence, retrieves target, then restores stack in correct bottom-up order &mdash; eliminates manual rearrangement.</li>
+            <li><strong>Real-time Collision Prevention System (CPS)</strong> with priority-based traffic control, configurable safety radii, and predictive path resolution for high-density multi-robot warehouse aisles.</li>
+            <li>WebSocket telemetry engine processing <strong>&lt;500ms-loop</strong> updates for live pose (X, Y, &theta;), velocity, battery SOC, and localization confidence across entire AMR fleet simultaneously.</li>
+          </ul>
+        </div>
+
+        <!-- Safety & Simulation -->
+        <div class="flagship-card fade-up delay-4">
+          <div class="flagship-card-header">
+            <div class="flagship-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Safety &amp; Simulation</h3>
+          </div>
+          <ul class="flagship-list">
+            <li>Built high-fidelity <strong>Simulation Engine</strong> to validate complex multi-robot mission flows virtually before physical deployment &mdash; reduced on-site commissioning time by <strong>~40%</strong>.</li>
+            <li>Fail-Safe Heartbeat monitor auto-halts all AMR operations on WMS connection loss; full Audit Log system for operational traceability and post-incident analysis.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label fade-up">Career</span>
+        <h2 class="section-title fade-up delay-1">Work <span class="accent">Experience</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item fade-up delay-2">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Developer</h3>
+                <div class="timeline-company">Robonetics Automation Solutions LLP</div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Mar 2026 &ndash; Present</span>
+                <span class="timeline-location">Singaperumalkoil, India</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Lead AIRA-Orbis FMS architecture and development &mdash; production system managing 10+ AMRs with real-time orchestration, SAP WMS synchronization, and industrial-grade fail-safes.</li>
+              <li>Own end-to-end system design: API contracts, database schema, WebSocket protocol, safety interlocks, and deployment. Promoted after owning 4 independent production systems.</li>
+              <li>Define and enforce reliability standards across all active robotics and automation projects.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item fade-up delay-3">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Junior Developer</h3>
+                <div class="timeline-company">Robonetics Automation Solutions LLP</div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Jul 2024 &ndash; Mar 2026</span>
+                <span class="timeline-location">Singaperumalkoil, India</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Developed vision-guided robotic bag-picking system using custom YOLOv8 model + DepthAI OAK-D; full TCP calibration extracts X/Y/Z + rotation per object; integrated with Delta PLC over Modbus TCP &mdash; transmits up to 7 bag coordinates per cycle.</li>
+              <li>Built AI-based CCTV safety monitoring system with configurable ROI human detection; sends emergency stop to Siemens PLC via S7 protocol (snap7) in &lt;100ms &mdash; deployed on live factory floor.</li>
+              <li>Implemented Daly BMS data acquisition over RS-485 for AMR fleet &mdash; reads cell-level voltage, current, temperature, and protection flags; performs SOC calculation and predictive state diagnostics.</li>
+              <li>Developed Part Number &amp; BOM Management System (React + Vite / Node.js / MySQL + JWT) with unique part number generation and duplicate prevention &mdash; standardized 500+ company assets.</li>
+              <li>Delivered full-cycle development on all systems: architecture, API design, UI/UX, DB schema, testing, and factory-floor deployment.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item fade-up delay-4">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Web Development Specialist</h3>
+                <div class="timeline-company">Nova Nectator</div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Mar 2024 &ndash; Apr 2024</span>
+                <span class="timeline-location">Remote</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Built and deployed PHP-based client web applications end-to-end across design, development, and production hosting.</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Me Section -->
-  <section id="About" class="about-me d-flex align-items-center">
+  <!-- Projects Section -->
+  <section id="projects" class="section section-alt">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h2>About <span class="highlight">Me</span></h2>
-          <h3>Junior Developer & Automation Expert</h3>
-          <p>With expertise in web development, automation, and server administration, I have worked on projects involving AMR robots, cloud solutions, and blockchain technologies. I am proficient in JavaScript, Node.js, React, and backend development.</p>
-          <a href="#" class="btn btn-primary btn-shadow">Read More</a>
+      <div class="section-header">
+        <span class="section-label fade-up">Portfolio</span>
+        <h2 class="section-title fade-up delay-1">Other <span class="accent">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card fade-up delay-2">
+          <div class="project-card-top">
+            <div class="project-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h3 class="project-title">AI Vision-Guided Robotic Bag Picking</h3>
+            <p class="project-org">Robonetics Automation Solutions LLP</p>
+          </div>
+          <div class="project-tags">
+            <span>YOLOv8</span>
+            <span>DepthAI OAK-D</span>
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>Modbus TCP</span>
+            <span>Delta PLC</span>
+          </div>
+          <p class="project-desc">Custom YOLO model + OAK-D depth camera with full TCP calibration extracts precise 3D coordinates. Delta PLC integration enables automated picking cycles with up to 7 coordinate sets per trigger &mdash; deployed in production.</p>
+        </div>
+
+        <div class="project-card fade-up delay-3">
+          <div class="project-card-top">
+            <div class="project-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3 class="project-title">AI-Based CCTV Safety System</h3>
+            <p class="project-org">Robonetics Automation Solutions LLP</p>
+          </div>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>Siemens S7/snap7</span>
+            <span>IP Cameras</span>
+            <span>Configurable ROI</span>
+          </div>
+          <p class="project-desc">Configurable ROI detects human entry into robot zones in real time; sends emergency interlock stop to Siemens S7 PLC in &lt;100ms. Visual and log-based alerting for compliance auditing &mdash; live on factory floor.</p>
+        </div>
+
+        <div class="project-card fade-up delay-4">
+          <div class="project-card-top">
+            <div class="project-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 class="project-title">Part Number &amp; BOM Management System</h3>
+            <p class="project-org">Robonetics Automation Solutions LLP</p>
+          </div>
+          <div class="project-tags">
+            <span>React + Vite</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MySQL</span>
+            <span>JWT</span>
+          </div>
+          <p class="project-desc">Full-stack asset management system standardizing 500+ mechanical, electrical, and electronic components. Enforces unique part number generation, zero-duplication, and centralized traceability across the organization.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- My Services Section -->
-  <section class="my-services py-5">
+  <!-- Skills Section -->
+  <section id="skills" class="section">
     <div class="container">
-      <h2 class="text-center mb-5">My <span class="highlight">Services</span></h2>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="service-card text-center p-4">
-            <div class="service-icon">
-              <i class="bi bi-code-slash"></i>
-            </div>
-            <h3 class="service-title">Full Stack Development</h3>
-            <p class="service-description">Building scalable and high-performance web applications with modern technologies like React, Node.js, and MongoDB.</p>
+      <div class="section-header">
+        <span class="section-label fade-up">Expertise</span>
+        <h2 class="section-title fade-up delay-1">Technical <span class="accent">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category fade-up delay-2">
+          <div class="skill-category-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            <h3>Fleet / AMR</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Autonomous FMS</span>
+            <span>AMR/AGV Orchestration</span>
+            <span>Collision Prevention</span>
+            <span>Path Scheduling</span>
+            <span>Fleet Telemetry</span>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="service-card text-center p-4">
-            <div class="service-icon">
-              <i class="bi bi-robot"></i>
-            </div>
-            <h3 class="service-title">Automation & AMR Solutions</h3>
-            <p class="service-description">Developing and integrating automation solutions, including AMR robots, industrial automation, and AI-powered robotics.</p>
+        <div class="skill-category fade-up delay-2">
+          <div class="skill-category-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.604.852.997 1.51 1H21a2 2 0 0 1 0 4h-.09c-.658.003-1.25.396-1.51 1z"/></svg>
+            <h3>Vision / AI</h3>
+          </div>
+          <div class="skill-tags">
+            <span>YOLOv8</span>
+            <span>DepthAI OAK-D</span>
+            <span>OpenCV</span>
+            <span>Custom Model Training</span>
+            <span>TCP Calibration</span>
+            <span>3D Coordinate Extraction</span>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="service-card text-center p-4">
-            <div class="service-icon">
-              <i class="bi bi-server"></i>
-            </div>
-            <h3 class="service-title">Server & Cloud Administration</h3>
-            <p class="service-description">Managing and configuring servers, cloud-based applications, and ensuring secure deployments for business solutions.</p>
+        <div class="skill-category fade-up delay-3">
+          <div class="skill-category-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+            <h3>PLC / IoT</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Delta Modbus TCP</span>
+            <span>Siemens S7/snap7</span>
+            <span>RS-485</span>
+            <span>RS-232</span>
+            <span>CAN-Open</span>
+            <span>Daly BMS</span>
+            <span>TCP</span>
+            <span>Safety Interlocks</span>
+          </div>
+        </div>
+        <div class="skill-category fade-up delay-3">
+          <div class="skill-category-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>Python</span>
+            <span>C++</span>
+            <span>PHP</span>
+            <span>REST API Design</span>
+            <span>SAP WMS Integration</span>
+            <span>Worker Threads</span>
+          </div>
+        </div>
+        <div class="skill-category fade-up delay-4">
+          <div class="skill-category-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span>React</span>
+            <span>Vite</span>
+            <span>JavaScript</span>
+            <span>WebSocket</span>
+            <span>Tailwind CSS</span>
+            <span>Bootstrap</span>
+            <span>Real-time Dashboards</span>
+          </div>
+        </div>
+        <div class="skill-category fade-up delay-4">
+          <div class="skill-category-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            <h3>Database &amp; Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span>MySQL</span>
+            <span>SQL</span>
+            <span>JWT</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Linux</span>
+            <span>Windows Server</span>
+            <span>VS Code</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- My Services Section -->
-  <section class="my-services py-5">
+  <!-- Education Section -->
+  <section id="education" class="section section-alt">
     <div class="container">
-      <h2 class="text-center mb-5">My <span class="highlight">Projects</span></h2>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="service-card text-center p-4">
-            <div class="service-icon">
-              <i class="bi bi-code-slash"></i>
-            </div>
-            <h3 class="service-title">AMR Control Web Application</h3>
-            <p class="service-description">Developed a web app for controlling AMR robots, including task scheduling and remote access.</p>
-          </div>
+      <div class="section-header">
+        <span class="section-label fade-up">Education</span>
+        <h2 class="section-title fade-up delay-1">Academic <span class="accent">Background</span></h2>
+      </div>
+      <div class="education-card fade-up delay-2">
+        <div class="education-degree">
+          <h3>B.E., Computer Science &amp; Engineering</h3>
+          <p class="education-school">Vetri Vinayaha College of Engineering &amp; Technology</p>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="service-card text-center p-4">
-            <div class="service-icon">
-              <i class="bi bi-code-slash"></i>
-            </div>
-            <h3 class="service-title">Blockchain-Powered Land Registry</h3>
-            <p class="service-description">Created a decentralized system for land registry using blockchain technology.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="service-card text-center p-4">
-            <div class="service-icon">
-              <i class="bi bi-server"></i>
-            </div>
-            <h3 class="service-title">Biometric Voting System using Blockchain</h3>
-            <p class="service-description">Designed a blockchain-based voting system with biometric authentication.</p>
-          </div>
+        <div class="education-meta">
+          <span class="education-date">Aug 2020 &ndash; Jun 2024</span>
+          <span class="education-gpa">CGPA: 8.5 / 10</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="container py-5">
-    <h2 class="text-center mb-5">Contact <span class="highlight">Me</span></h2>
-    <form action="#" method="POST">
-        <div class="row g-4">
-            <div class="col-md-6">
-                <input type="text" class="form-control bg-dark text-white border-0 p-3" placeholder="Full Name" required style="color: antiquewhite;">
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label fade-up">Connect</span>
+        <h2 class="section-title fade-up delay-1">Get In <span class="accent">Touch</span></h2>
+        <p class="section-subtitle fade-up delay-2">Interested in collaborating or have an opportunity? Let's connect.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info fade-up delay-2">
+          <div class="contact-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <h4>Location</h4>
+              <p>Chennai, Tamil Nadu, India</p>
             </div>
-            <div class="col-md-6">
-                <input type="email" class="form-control bg-dark text-white border-0 p-3" placeholder="Email Address" required>
+          </div>
+          <div class="contact-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/saravanan-s-a80132275" target="_blank" rel="noopener">linkedin.com/in/saravanan-s-a80132275</a>
             </div>
-            <div class="col-md-12">
-                <textarea class="form-control bg-dark text-white border-0 p-3" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <div class="contact-card">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/saravanan2483" target="_blank" rel="noopener">github.com/saravanan2483</a>
             </div>
+          </div>
         </div>
-        <div class="text-center mt-4">
-            <button type="submit" class="btn btn-primary px-5 py-2">Send Message</button>
-        </div>
-    </form>
+        <form class="contact-form fade-up delay-3" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hidden" style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">Saravanan <span class="accent">S</span></span>
+        <p>Industrial Automation Software Engineer</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.linkedin.com/in/saravanan-s-a80132275" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/saravanan2483" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
